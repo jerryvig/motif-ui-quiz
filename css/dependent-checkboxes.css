@@ -1,0 +1,27 @@
+.row {
+	background-color: #c0c0c0;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.oddRow {
+	background-color: #ffffff;
+	font-family: arial;
+	font-weight: normal;
+}
+
+.cell {
+	display: inline-block;
+	width: 160px;
+	text-align: center;
+}
+
+.firstCol {
+	display: inline-block;
+	width: 160px;
+	font-weight: bold;
+}
+
+#row0 {
+	font-weight: bold;
+}

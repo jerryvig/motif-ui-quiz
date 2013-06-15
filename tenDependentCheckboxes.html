@@ -1,0 +1,69 @@
+<!doctype html>
+<html>
+ <head>
+   <title>Motif Investing UI Engineering Quiz - Ten Dependent Checkboxes</title>
+   <link rel="stylesheet" href="css/dependent-checkboxes.css">
+ </head>
+ <body>
+	<div id="privacySettingsTable" style="width:1820px;margin:0 auto;">
+		<div id="titleRow" class="row" style="width:1820px;text-align:center;font-weight:bold;">
+			Dependent Checkboxes Exercise
+		</div>
+		<div id="row0" class="row">
+			<div class="cell">
+				Feature Name
+			</div>
+		</div>
+		<div id="row1" class="oddRow">
+			<div class="firstCol">
+				Feature I
+			</div>
+		</div>
+		<div id="row2" class="row">
+			<div class="firstCol">
+				Feature II
+			</div>
+		</div>
+		<div id="row3" class="oddRow">
+			<div class="firstCol">
+				Feature III
+			</div>
+		</div>
+		<div id="row4" class="row">
+			<div class="firstCol">
+				Feature IV
+			</div>
+		</div>
+		<div id="row5" class="oddRow">
+			<div class="firstCol">
+				Feature V
+			</div>
+		</div>
+		<div id="row6" class="row" style="width:1820px;text-align:center;font-weight:bold;">
+			<input type="submit" value="Print Report" id="submitButton">
+		</div>
+	</div>
+	<script type="text/javascript">
+   		var row0 = document.getElementById('row0');
+   		for ( var i=0; i<10; i++ ) {
+   			var div = document.createElement('div');
+   			div.setAttribute('class','cell');
+   			div.appendChild( document.createTextNode('Level '+i));
+   			row0.appendChild( div );
+   		}
+   		
+   		for ( var j=1; j<6; j++ ) {
+   			var row = document.getElementById('row'+j);
+   			for ( var i=0; i<10; i++ ) {
+   				var div = document.createElement('div');
+   				var input = document.createElement('input');
+   				input.setAttribute('type','checkbox');
+   				div.setAttribute('class','cell');
+   				div.appendChild( input );
+   				row.appendChild( div );
+   			}
+   		}
+   </script>
+   <script type="text/javascript" src="js/dependent-checkboxes.js"></script>
+ </body>
+</html>

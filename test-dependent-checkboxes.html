@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Test Dependent Checkboxes</title>
+<link rel="stylesheet" href="css/dependent-checkboxes.css">
+<link rel="stylesheet" href="http://code.jquery.com/qunit/qunit-1.11.0.css">
+</head>
+<body>
+<div id="privacySettingsTable" style="width:660px;margin:0 auto;">
+		<div id="titleRow" class="row" style="width:660px;text-align:center;font-weight:bold;">
+			Dependent Checkboxes Exercise
+		</div>
+		<div id="row0" class="row">
+			<div class="cell">
+				Feature Name
+			</div>
+			<div class="cell">
+				High
+			</div>
+			<div class="cell">
+			 	Medium
+			</div>
+			<div class="cell">
+				Low
+			</div>
+		</div>
+		<div id="row1" class="oddRow">
+			<div class="firstCol">
+				Feature I
+			</div>
+			<div class="cell">
+				<input type="checkbox" id="row1High">
+			</div>
+			<div class="cell">
+			 	<input type="checkbox">
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+		</div>
+		<div id="row2" class="row">
+			<div class="firstCol">
+				Feature II
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+			<div class="cell">
+			 	<input type="checkbox">
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+		</div>
+		<div id="row3" class="oddRow">
+			<div class="firstCol">
+				Feature III
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+			<div class="cell">
+			 	<input type="checkbox">
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+		</div>
+		<div id="row4" class="row">
+			<div class="firstCol">
+				Feature IV
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+			<div class="cell">
+			 	<input type="checkbox">
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+		</div>
+		<div id="row5" class="oddRow">
+			<div class="firstCol">
+				Feature V
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+			<div class="cell">
+			 	<input type="checkbox">
+			</div>
+			<div class="cell">
+				<input type="checkbox">
+			</div>
+		</div>
+		<div id="row6" class="row" style="width:660px;text-align:center;font-weight:bold;">
+			<input type="submit" value="Print Report" id="submitButton">
+		</div>
+	</div>
+	<br>
+<div id="qunit"></div>
+<div id="qunit-fixture"></div>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<script src="http://code.jquery.com/qunit/qunit-1.11.0.js"></script>
+<script type="text/javascript" src="js/dependent-checkboxes.js"></script>
+<script type="text/javascript" src="js/test-dependent-checkboxes.js"></script>
+</body>
+</html>
